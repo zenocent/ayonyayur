@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --color-body: #f5f5f5;
+    --color-header: #ffffff;
+    --color-logo: #48486d;
+    --color-nav: #00be85;
+}
+
+body {
+    background: var(--color-body);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    height: max-content;
+    padding: 5px 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+header .nav1 {
+    background: var(--color-header);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0;
+    padding: 5px 1%;
+    border-radius: 5px;
+    box-shadow: 0 0px 1px black;
+}
+
+header .nav1 .img-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;    
+}
+
+header .nav1 .logo-ttl {
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: sans-serif;
+    color: var(--color-logo)
+}
+
+header .nav1 .logo-ttl i {
+    color: var(--color-nav);
+}
+
+header .nav1 .btn-soc-med {
+    background: var(--color-nav);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    color: var(--color-header);
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+}
+
+header .nav1 .btn-soc-med:hover {
+    transform: scale(0.95);
+}
+
+header .nav2 {
+    background: var(--color-header);
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 1%;
+    border-radius: 5px;
+    box-shadow: 0 0px 1px black;
+}
+
+header .nav2 .nav-link {
+    color: var(--color-logo);
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+header .nav2 .nav-link:hover {
+    color: var(--color-nav);
+}
+
+header .nav2 .btn-search {
+    background: var(--color-nav);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    color: var(--color-header);
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+header .nav2 .btn-search:hover {
+    transform: scale(0.95);
+}
+
+.container-search {
+    position: fixed;
+    z-index: 101;
+    top: 135px;
+    width: 98%;
+    height: max-content;
+    visibility: hidden;
+    transform: scale(0);
+    box-shadow: 0 0px 1px black;
+    border-radius: 5px;
+}
+
+.container-search input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 1%;
+    font-size: 18px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+main {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home {
+    width: 100%;
+    height: 90vh;
+    background-image: url(https://a-static.besthdwallpaper.com/colorful-vegetable-wallpaper-2880x1620-2909_52.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.cont-home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    width: max-content;
+    z-index: 1;
+    gap: 10px;
+}
+
+.cont-home .ttl-p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cont-home .btn-home {
+    padding: 10px 15px;
+    border: 2px solid var(--color-nav);
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.cont-home .btn-home:hover {
+    background: var(--color-nav);
+}
+
+#product {
+    width: 100%;
+    height: max-content;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ttl-product {
+    margin-top: 150px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: var(--color-nav);
+    margin-bottom: 30px;
+}
+
+
+.cont-product {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0% 1%;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.card-product {
+    width: 280px;
+    height: max-content;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0px 1px black;
+    transition: 0.3s;
+    overflow: hidden;
+    animation: fade 3s forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.card-product2 {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.card-product2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.card-product:hover img {
+    transform: scale(1.150);
+}
+
+.card-product3 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-product3 p {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.card-btn {
+    padding: 10px 15px;
+    border: 2px solid var(--color-nav);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--color-nav);
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background: var(--color-nav);
+    color: white;
+}
+
+#contact {
+    width: 100%;
+    height: max-content;
+    padding: 10px 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-contact {
+    width: 100%;
+    height: max-content;
+    border-radius: 5px;
+    box-shadow: 0 0px 1px black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgb(36, 36, 36);
+}
+
+.ttl-contact {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: var(--color-nav);
+}
+
+.card-contact fieldset {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid var(--color-nav);
+}
+
+.card-contact fieldset legend {
+    position: relative;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: var(--color-nav);
+    padding: 0px 5px;
+    margin-left: 10px;
+}
+
+.card-contact fieldset input {
+    position: relative;
+    top: -2px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background: transparent;
+    color: white;
+}
+
+.card-contact fieldset input:focus {
+    outline: none;
+}
+
+.card-contact fieldset textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background: transparent;
+    color: white;
+}
+
+.card-contact fieldset textarea:focus {
+    outline: none;
+}
+
+.card-contact button {
+    padding: 10px 15px;
+    border: 2px solid var(--color-nav);
+    border-radius: 5px;
+    background: var(--color-nav);
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.license {
+    width: 100%;
+    height: max-content;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    color:rgba(0, 0, 0, 0.678);
+}

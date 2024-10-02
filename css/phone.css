@@ -1,0 +1,23 @@
+@media screen and (max-width: 500px) {
+    
+    .cont-home .ttl-p {
+        font-size: 20px;
+    }
+
+    .cont-home .btn-home {
+        font-size: 16px;
+    }
+
+    .cont-product{ 
+        justify-content: left;
+        gap: 20px;
+    }
+
+    .card-product {
+        width: 100%;
+    }
+
+    .card-product2 {
+        height: auto;
+    }
+}
