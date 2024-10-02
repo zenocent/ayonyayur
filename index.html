@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYONyayur</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/phone.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="nav1">
+            <img src="https://st4.depositphotos.com/8301258/24400/v/450/depositphotos_244009292-stock-illustration-healthy-agriculture-vegetable-food.jpg" alt="logo" class="img-logo">
+            <p class="logo-ttl">AYO<i>Nyayur</i></p>
+            <button class="btn-soc-med" onclick="followUs()">Ikuti Kami</button>
+        </nav>
+        <nav class="nav2">
+            <button class="nav-link" onclick="goToHome()">Beranda</button>
+            <button class="nav-link" onclick="goToProduct()">Produk</button>
+            <button class="nav-link" onclick="goToContact()">Kontak</button>
+            <button class="btn-search">Cari</button>
+
+        </nav>
+    </header>
+
+    <div class="container-search">
+        <input type="text" name="" id="" placeholder="Cari Produk...">
+    </div>
+
+    <!-- main -->
+    <main>
+
+        <!-- content -->
+        <section id="home">
+            <div class="cont-home">
+                <p class="ttl-p">Ayo berbelanja berbagai sayur-sayuran segar di sini.</p>
+                <button class="btn-home" onclick="goToProduct()">Ayo Berbelanja</button>
+            </div>
+        </section>
+        <section id="product">
+            <p class="ttl-product">Produk Kami</p>
+            <div class="cont-product">
+                <a class="card-product">
+                    <div class="card-product2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_obU1Vg7ktTkFWNRcwGAftlalo_RuLxs71Q&s" alt="">
+                    </div>
+
+                    <div class="card-product3">
+                        <p>
+                            Nama Produk : Sawi
+                            <br>
+                            Harga : Rp. 10.000
+                            <br>
+                            Berat : 1 kg
+                            <br><br>
+                            <button class="card-btn">Beli Sekarang</button>
+                        </p>
+                    </div>
+                </a>
+
+                <a class="card-product">
+                    <div class="card-product2">
+                        <img src="asset/bayam.png" alt="">
+                    </div>
+
+                    <div class="card-product3">
+                        <p>
+                            Nama Produk : Bayam
+                            <br>
+                            Harga : Rp. 7.000
+                            <br>
+                            Berat : 1 kg
+                            <br><br>
+                            <button class="card-btn">Beli Sekarang</button>
+                        </p>
+                    </div>
+                </a>
+
+
+                <a class="card-product">
+                    <div class="card-product2">
+                        <img src="asset/tomat.png" alt="">
+                    </div>
+
+                    <div class="card-product3">
+                        <p>
+                            Nama Produk : Tomat
+                            <br>
+                            Harga : Rp. 11.500
+                            <br>
+                            Berat : 1 kg
+                            <br><br>
+                            <button class="card-btn">Beli Sekarang</button>
+                        </p>
+                    </div>
+                </a>
+
+
+                <a class="card-product">
+                    <div class="card-product2">
+                        <img src="asset/jagung.png" alt="">
+                    </div>
+
+                    <div class="card-product3">
+                        <p>
+                            Nama Produk : Jagung
+                            <br>
+                            Harga : Rp. 19.000
+                            <br>
+                            Berat : 1 kg
+                            <br><br>
+                            <button class="card-btn">Beli Sekarang</button>
+                        </p>
+                    </div>
+                </a>
+
+                <a class="card-product">
+                    <div class="card-product2">
+                        <img src="asset/wortel.png" alt="">
+                    </div>
+
+                    <div class="card-product3">
+                        <p>
+                            Nama Produk : Wortel
+                            <br>
+                            Harga : Rp. 8.000
+                            <br>
+                            Berat : 1 kg
+                            <br><br>
+                            <button class="card-btn">Beli Sekarang</button>
+                        </p>
+                    </div>
+                </a>
+
+
+                <a class="card-product">
+                    <div class="card-product2">
+                        <img src="asset/cabai.png" alt="">
+                    </div>
+
+                    <div class="card-product3">
+                        <p>
+                            Nama Produk : Cabai
+                            <br>
+                            Harga : Rp. 75.000
+                            <br>
+                            Berat : 1 kg
+                            <br><br>
+                            <button class="card-btn">Beli Sekarang</button>
+                        </p>
+                    </div>
+                </a>
+
+
+            </div>
+        </section>
+        <section id="contact">
+
+            <form action="mailto:ajunf2@gmail.com" class="card-contact">
+                <p class="ttl-contact">Kontak Kami</p>
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" name="email" placeholder="Masukkan Email">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pesan</legend>
+                    <textarea name="message" placeholder="Masukkan Pesan"></textarea>
+                </fieldset>
+
+                <button class="btn-contact">Kirim</button>
+
+            </form>
+
+            <div class="license">&copy; 2024 AYONyayur. All rights reserved.</div>
+
+        </section>
+
+        <!-- footer -->
+        <footer></footer>
+    </main>
+
+    <!-- script -->
+     <script src="js/index.js"></script>
+    
+</body>
+</html>
